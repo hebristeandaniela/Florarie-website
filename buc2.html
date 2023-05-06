@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Buchet elegant cu floarea soarelui</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesec.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<div class="box-set">
+    <section><button onclick="window.location.href='Floraria.html'">Florărie</button></section>
+    <aside><button onclick="window.location.href='contact.html'">Contact</button></aside>
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+<body>
+    <nav class="navbar">
+        <button onclick="window.location.href='promoti.html'">Promotii</button>
+        <button onclick="window.location.href='animale.html'">Animale din flori</button>
+        <button onclick="window.location.href='buchete.html'" style="background-color:#a3f696">Buchete flori</button>
+        <button onclick="window.location.href='cosuri.html'">Cosuri flori</button>
+        <button onclick="window.location.href='aranjamente.html'">Aranjamente florale</button>
+        <button onclick="window.location.href='cadouri.html'">Cadouri speciale</button>
+    </nav>
+    <div class="mijloc">
+        <section1>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="buc2.jpg" style="width:430px; height:430px;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="buc2_1.jpg" style="width:430px; height:430px;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="buc2_2.jpg" style="width:430px; height:430px;">
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <script>
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000);
+    }
+            </script>
+        </section1>
+        <aside1>
+            <h1>Buchet elegant cu floarea soarelui</h1><br />
+            <i class="bi-geo-alt">Livrare in 2-4 ore</i><br /><br />
+            <h2>420,00lei</h2><br />
+            <button onclick="window.location.href='adaugaincos20.html'" style="margin-left:30px;">Adauga in cos</button><br /><br />
+            <span class="fa fa-star checked" style="margin-left:30px;"></span>
+            <span class="fa fa-star checked" style="margin-left:2px;"></span>
+            <span class="fa fa-star checked" style="margin-left:2px;"></span>
+            <span class="fa fa-star checked" style="margin-left:2px;"></span>
+            <span class="fa fa-star checked" style="margin-left:2px;"></span>
+        </aside1>
+    </div>
+    <div class="div_paragraf">
+        <h2>Descriere</h2><br />
+        <p>   -Buchet elegant cu floarea-soarelui - descopera un design special, descopera un buchet manufacturat atat corect tehnic, cat si corect.... imaginativ. </p>
+        <p>   -Floarea soarelui este o floare cu sezonalitate restransa. In extra-sezon aceste flori se pot inlocui cu gerbera galbena sau se pot aduce in baza unei comenzi prealabile cu 10 zile inainte de livrare.</p>
+        <p>   -Florile pe care le folosim sunt mereu proaspete. Astfel, în unele cazuri ele pot fi sub formă de boboci. Aceștia se vor deschide în maxim 24 de ore, dacă în încăpere sunt între 23 și 25 de grade Celsius. Persoana care va primi acest produs se poate bucura mult mai mult de prospețimea lui, în acest caz!</p>
+
+    </div>
+    <nav class="footer">
+        <button onclick="window.location.href='despre.html'">Despre</button>
+        <button onclick="window.location.href='comenzi.html'">Comenzi</button>
+        <button onclick="window.location.href='contact.html'">Contact</button>
+    </nav>
+</body>
+
+</html>
